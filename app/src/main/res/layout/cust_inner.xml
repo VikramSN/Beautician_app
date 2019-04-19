@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/serviceListCardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/card_trran_plain"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/custImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/card_plain"
+        android:contentDescription="@null"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/nail" />
+
+    <TextView
+        android:id="@+id/custName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/custImg"
+        android:text="Beauty Shop"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/custDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custName"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/custImg"
+        android:text="100.00 km"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <RatingBar
+        android:id="@+id/custRatting"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/custDistance"
+        android:layout_marginStart="-53dp"
+        android:layout_marginTop="-7dp"
+        android:layout_toEndOf="@id/custImg"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:rating="3"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+
+</RelativeLayout>
